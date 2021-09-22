@@ -1,0 +1,2087 @@
+/* ----------------------google fonts------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ----------------------google fonts------------- */
+
+/* ---------------------Universel class------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    border:none;
+    outline: none;
+}
+/* ---------------------Universel class------------- */
+
+
+
+/* _------------------custom scrollbar---------------- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #161616;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(233, 207, 7);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(236, 97, 97);
+    border-radius: 5px;
+  }
+
+/* _------------------custom scrollbar---------------- */
+
+/* --------------------html------------------------------- */
+html{
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+body{
+    max-width: 100%;
+    height: 148vh;
+    background-image: url(img/wellpaper02.jpg);
+    background-position:  center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    cursor: url(img/joy02.png), auto;
+}
+
+/* --------------------html------------------------------- */
+
+
+
+/* -------------------Main ssection--------------------- */
+main{
+    background-color: rgba(0, 0, 0, 0.596);
+    backdrop-filter: blur(40px);
+    position:sticky ;
+}
+
+/* -------------------Main ssection--------------------- */
+
+
+
+
+/* -------------------menu bar-------------------- */
+#menu_bars{
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    z-index: 900000;
+    width: 3vh;
+   color:#E3B205;
+   font-size: 20px;
+   display: none;
+}
+#menu_bar_active{
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    z-index: 900000;
+    width: 3vh;
+   color:#E3B205;
+   font-size: 20px;
+   display: none;
+}
+
+
+
+
+
+/* -------------------menu bar-------------------- */
+
+
+
+
+/* ----------------------hero section start---------------- */
+/* --------------nav section---------------- */
+
+.navbar{
+    width: 100%;
+    height: 8.1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 8%;
+    background: rgba(177, 152, 8, 0);
+    border-bottom: 1px solid rgba(209, 209, 209, 0.296);
+    backdrop-filter: blur(20px);
+    position:fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 1000;
+}
+.navbar .logo  img{
+    width: 5.3vh;
+    height: 5vh;
+    margin-top: .4vh;
+} 
+.navbar .menu{
+    display: flex;
+}
+.navbar .menu a{
+    color:#ffffff;
+    margin: 0 4vh;
+    text-transform: uppercase;
+    font-size: 14.5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    width: 8vh;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+.navbar .menu a:hover{
+    letter-spacing: 2px;
+    color:#E3B205;
+    transition: all 0.2s linear;
+}
+.navbar .cart{
+    position: relative;
+}
+.navbar .cart img{
+    height: 2.8vh;
+    width: 4vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ------------------nav section end-------------- */
+
+
+/* ------------------home section start--------------- */
+.hero_section{
+    min-width: 100%;
+    min-height: 100vh; 
+}
+.home_container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    padding-top: 8vh;
+}
+.left_col,
+.right_col{
+    width: 50%;
+}
+.left_col{
+    padding: 4%;
+    padding-left: 8%;
+}
+.left_col h1{
+    font-size: 7vh;
+    line-height: 11vh;
+    margin-top:8%;
+    color:rgba(255, 255, 255, 0.863);
+}
+.left_col button{
+    background: #FF725E;
+    padding: 9px 40px;
+    color:#ffffff;
+    border-radius:8px 20px 0px 8px ;
+    margin: 60px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.left_col .home_card{
+    display: flex;
+    margin-top: 5vh;
+}
+.left_col .home_card .card{
+    margin-right: 3vh;
+    background: rgba(255, 200, 0, 0.884);
+    height: 8vh;
+    width: 8vh;
+    position: relative;
+    border-radius: 1vh;
+    transition: all 0.2s linear;
+}
+.left_col .home_card .card img{
+    height: 5vh;
+    width: 5vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.left_col .home_card .card:hover{
+    transform: translateY(-10px);
+    transition: all 0.2s linear;
+}
+
+.right_col img{
+    height:100%;
+    width: 100%;
+    padding: 7vh;
+}
+
+/* ------------------home section end--------------- */
+/* ----------------------hero section end---------------- */
+
+
+
+/* ------------------service section start--------------- */
+.service_section{
+    min-width: 100%;
+    min-height: auto;
+    padding: 5%;
+}
+.service_section .service_container .headding{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.service_section .service_container h1{
+    color:#E3B205;
+    text-transform: uppercase;
+}
+.service_section .service_container img{
+    height: 4vh;    
+    width: 4vh;
+}
+.service_section .service_container h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 42px;
+    margin: 5vh 0;
+    line-height: 50px;
+}
+
+.service_section .service_container .sercive_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.service_section .service_container .sercive_cards .s_card{
+    background: #E3B205;
+    text-align: center;
+    width: 30vh;
+    height: 17vh;
+    padding-top: 3vh;
+    border-radius: 10px;
+    color:#ffffff;
+    margin: 0 4vh;
+    position: relative;
+    transition: all 0.2s linear;
+    z-index: 2;
+}
+.service_section .service_container .sercive_cards .s_card img{
+    height: 7vh;
+    width: 7vh;
+    z-index: 55;
+}
+.service_section .service_container .sercive_cards .s_card h3{
+    font-size: 18px;
+    font-weight: 400;
+    color:#000000;
+    z-index: 55;
+}
+.service_section .service_container .sercive_cards .s_card::before{
+    content: '';
+    height: 10%;
+    width: 10%;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s linear;
+    z-index: -1;
+}
+.service_section .service_container .sercive_cards .s_card:hover::before{
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s linear;
+}
+/* ---------steps row section------- */
+.service_section  .steps_row{
+    padding: 2vh 0;
+}
+.service_section  .steps_row h1{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 42px;
+    margin: 5vh 0;
+    line-height: 50px;
+    margin-bottom: 7vh;
+}
+.service_section  .steps_row .steps_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service_section  .steps_row .steps_container .steps_card{
+    background: rgb(236, 97, 97);
+    text-align: center;
+    width: 43vh;
+    height: 25vh;
+    padding: .8vh;
+    border-radius: 10px;
+    color:#ffffff;
+    margin: 0 4vh;
+    transition: all 0.2s linear;
+    z-index: 2;
+}
+.service_section  .steps_row .steps_container .steps_card img{
+    height: 15vh;
+    width: 17vh;
+    margin-bottom: 1vh;
+}
+.service_section  .steps_row .steps_container .steps_card p{
+    font-size: 15px;
+}
+.service_section  .steps_row .steps_container .steps_card:hover{
+    transform: translateY(-12px);
+    background: rgb(255, 255, 255);
+    color:#000000
+} 
+
+/* ------------------service section end--------------- */
+
+
+/* -----------------recipes section start ------------------ */ 
+.recipe_section{
+    min-width: 100%;
+    min-height: auto;
+    padding: 5%;
+}
+.recipe_section .recipe_container .headding{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.recipe_section .recipe_container h1{
+    color:#E3B205;
+    text-transform: uppercase;
+}
+.recipe_section .recipe_container img{
+    height: 4vh;    
+    width: 4vh;
+}
+.recipe_section .recipe_container h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 42px;
+    margin: 5vh 0;
+    line-height: 50px;
+}
+
+.recipe_section .recepies_card_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5vh;
+}
+.recipe_section .recepies_card_container  .recepies_card{
+    background: rgb(223, 192, 17);
+    height:28vh;
+    width: 20vh;
+    margin: 2vh;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.2s linear;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    padding-top: 0vh;
+}
+.recipe_section .recepies_card_container  .recepies_card img{
+    height: 17vh;
+    width: 17vh;
+    transition: all 0.2s linear;
+}
+.recipe_section .recepies_card_container  .recepies_card .headding_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.recipe_section .recepies_card_container  .recepies_card .headding_box h3{
+    font-size: 16px;
+}
+.recipe_section .recepies_card_container  .recepies_card .headding_box a{
+    color:#000000;
+    background: rgba(0, 0, 0, 0.219);
+    padding:3px 7.5px;
+    border-radius: 50%;
+}
+.recipe_section .recepies_card_container  .recepies_card p{
+    text-align: left;
+    font-size: 14px;
+}
+.recipe_section .recepies_card_container  .recepies_card h4{
+    text-align-last: left;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.recipe_section .recepies_card_container  .recepies_card:hover img{
+    margin-top: -35px;
+    transition: all 0.15s linear;
+}
+.recipe_section .recepies_card_container  .recepies_card::before{
+    content: 'Add Cart';
+    position: absolute;
+    bottom: 0;
+    left: 26%;
+    width: 90px;
+    height: 25px;
+    background: rgb(165, 24, 24);
+    border-radius: 4px;
+    padding-top: 3px;
+    color:#ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: -1;
+    transition:all 0.3s linear;
+}
+.recipe_section .recepies_card_container  .recepies_card:hover::before{
+    display: initial;
+    margin-bottom: 8px;
+    transition:all 0.3s linear;
+    z-index: 2;
+}
+
+
+/* -----------------recipes section end ------------------ */ 
+
+/* ------------------app section start-------------------- */
+.app_section {
+    min-width: 100%;
+    min-height: 80vh;
+    padding: 5%;
+}
+.app_section .headding{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.app_section .headding h1{
+    color:#E3B205;
+    text-transform: uppercase;
+   
+}
+.app_section .headding img{
+    height: 4vh;    
+    width: 4vh;
+}
+.app_section .app_container{
+    display: flex;
+}
+.app_left_col,
+.app_right_col{
+    width: 50%;
+}
+.app_left_col img{
+    height: 85%;
+    width: 85%;
+    margin-left: 10vh;
+}
+.app_right_col{
+    text-align: center;
+    padding: 10%  0%;
+}
+.app_right_col .app_right_container h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 42px;
+    margin: 5vh 0;
+    line-height: 50px;
+}
+.app_right_col .app_right_container h3{
+    font-size: 15px;
+    line-height: 22px;
+    color:#f0f0f0d8;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.app_right_col .app_right_container .button_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app_right_col .app_right_container .button_container .button_box{
+    background: #E3B205;
+    margin: 0 12px;
+    display: flex;
+    width: 16vh;
+    height: 4vh;
+    padding: .4vh;
+    border-radius: 4px;
+    transform: scale(1.0);
+    transition: all 0.2s linear;
+}
+.app_right_col .app_right_container .button_container .button_box i{
+  font-size: 26px;
+  margin-right: 10px;
+  color:#000000;
+}
+.app_right_col .app_right_container .button_container .button_box p{
+    font-size: 12px;
+    line-height: 10px;
+    color:#000000;
+}
+.app_right_col .app_right_container .button_container .button_box:hover{
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+/* ------------------app section end-------------------- */
+
+
+
+/* ---------------bocking section start------------------- */
+.bocking_section{
+    min-width: 100%;
+    min-height: auto;
+    padding: 5%;
+}
+.bocking_section .headding{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.bocking_section h1{
+    color:#E3B205;
+    text-transform: uppercase;
+}
+.bocking_section img{
+    height: 4vh;    
+    width: 4vh;
+}
+.bocking_section .bocking_container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.bk_left_col{
+    width: 50%;
+    padding:10vh  5vh;
+}
+.bk_right_col{
+    width: 50%;
+    margin: auto 0;
+}
+.bk_left_col img{
+    height: 100%;
+    width:100%;
+}
+.bocking_section .bocking_container .bk_right_col h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 42px;
+    margin: 5vh 0;
+    line-height: 50px;
+}
+.bocking_section .bocking_container .bk_right_col .button_container .button_row{
+    display:  flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5vh 0;
+}
+.bocking_section .bocking_container .bk_right_col .button_container  .button{
+    background: #E3B205;
+    height: 5vh;
+    width: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh;
+    border-radius: 8px;
+    margin-right: 4vh;
+}
+.bocking_section .bocking_container .bk_right_col .button_container  .button:last-child{
+    margin-right: 0vh;
+}
+.bocking_section .bocking_container .bk_right_col .button_container  .button a{
+    margin-right: 1.3vh;
+    color:#000000;
+    font-size: 20px;
+}
+.bocking_section .bocking_container .bk_right_col .button_container  .button table tr td select{
+    background:none;
+    font-size: 16px;
+}
+.bocking_section .bocking_container .bk_right_col .button_container  .button table tr td select option {
+    background: #E3B205;
+}
+.bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2{
+    background: #E3B205;
+    height: 5vh;
+    width: 20vh;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   padding: 1vh;
+   border-radius: 8px;
+}
+.bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2 a{
+    margin-right: 2vh;
+    color:#000000;
+    font-size: 20px;
+}
+.bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2 input{
+    width: 10vh;
+    background: none;
+    font-size: 16px;
+}
+.bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2 input::placeholder{
+    color:#000000;
+}
+.bocking_section .bocking_container .bk_right_col .button_container .button_row .button_3{
+    background: #E3B205;
+    height: 5vh;
+    width: 20vh;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   padding: 1vh;
+   border-radius: 8px;
+}
+
+.bocking_section .bocking_container .bk_right_col .button_container .button_row .button_3 input{
+    width: 10vh;
+    background: none;
+    font-size: 18px;
+    color:#000000;
+    font-weight: 500;
+} 
+
+/* ---------------bocking section end------------------- */
+
+/* -------------review section start------------------ */
+.review_section{
+    min-width: 100%;
+    min-height: auto;
+    padding: 5%;
+}
+.review_section .headding{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.review_section h1{
+    color:#E3B205;
+    text-transform: uppercase;
+}
+.review_section img{
+    height: 4vh;    
+    width: 4vh;
+}
+.review_section .review_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rv_left_col{
+    width: 50%;
+    padding: 2%;
+}
+.rv_left_col h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 42px;
+    margin: 5vh 0;
+    line-height: 50px;
+    margin-bottom: 10vh;
+}
+.rv_left_col .user_info{
+    margin-bottom: 10vh;
+}
+.rv_left_col .user_container{
+    display: flex;
+    margin-bottom: 0.8vh;
+}
+.rv_left_col .user_container img{
+    margin-right: 3vh;
+}
+.rv_left_col .user_container h4{
+    color:#E3B205;
+}
+.rv_left_col .user_container p{
+    color:#d3a606d5;
+    font-size: 14px;
+    font-weight: 300;
+}
+.rv_left_col p{
+    font-size: 14px;
+    line-height: 22px;
+    color:#e2e2e2;
+    margin-bottom: 2vh;
+}
+.rv_left_col .review_icon a{
+   color:#E3B205;
+}
+
+.rv_right_col{
+    width: 50%;
+    text-align: center;
+    margin-right:8vh;
+}
+.rv_right_col img{
+    height: 70vh;
+    width: 100%;
+    
+    
+}
+
+/* -------------review section start------------------ */
+
+
+/* ----------------footer_section start--------------- */
+.footer_section{
+    min-width: 100%;
+    min-height: auto;
+    padding: 5%;
+}
+.footer_section .headding{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.footer_section h1{
+    color:#E3B205;
+    text-transform: uppercase;
+}
+.footer_section img{
+    height: 4vh;    
+    width: 4vh;
+}
+.footer_section .footer_conatiner{
+    display: flex;
+    justify-content: space-between;
+}
+.fotter_left{
+    width:30% ;
+    padding: 3vh;
+}
+.fotter_left p{
+    font-size: 14px;
+    margin: 1vh 0;
+    color:#e2e2e2;
+}
+.fotter_left .social_icons{
+    display: flex;
+    margin:  1.5vh 0;
+}
+.fotter_left .social_icons a{
+   margin-right: 2vh;
+   color:#E3B205;
+   font-size: 18px;
+}
+.footer_right{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3vh;
+}
+
+.footer_right .footer_content a{
+    display: block;
+    font-size: 14px;
+    color:#ffffff;
+    margin: .7vh 0;
+
+}
+.footer_right .footer_content h4{
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 1.5vh;
+    color:#E3B205;
+}
+/* ----------------footer_section end--------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------media quarry------------------- */
+@media only screen and (max-width: 991px){
+
+/* -------------------menu bar-------------------- */
+        #menu_bars{
+            display: initial;
+        }
+
+/* -------------------menu bar-------------------- */
+
+
+/* --------------nav section---------------- */
+        .navbar{
+            padding: 0% 0%;
+            width:20%;
+            height:100%;
+            position:fixed;
+            top: 0%;
+            left: 0%;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+        .navbar .menu{
+            display: block;
+        }
+        .navbar .menu a{
+            margin:10vh 1.5vh;
+            font-size: 13px;
+            font-weight: 400;
+            display: block;
+        }
+        .navbar .cart{
+            display: none;
+        }
+
+        .navbar{
+            left: -120%;
+        }
+
+        .navbar.active{
+            left: 0%;
+        }
+/* ------------------nav section end-------------- */
+
+/* ------------------home section start--------------- */
+        .hero_section{
+            width: 100%;
+            height: auto; 
+        }
+        .home_container{
+            display: block;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            padding-top: 0vh;
+        }
+        .left_col,
+        .right_col{
+            width: 100%;
+        }
+/* ------------------home section end--------------- */
+
+/* ------------------service section start--------------- */
+        .service_section{
+            min-width: 100%;
+            min-height: auto;
+            padding: 0vh 2vh;
+            padding-top: 5vh;
+        }
+
+        .service_section .service_container h2{
+            font-size: 34px;
+            margin: 4vh 0;
+            line-height: 42px;
+        }
+
+        .service_section .service_container .sercive_cards{
+            margin-top: 7vh;
+        }
+        .service_section .service_container .sercive_cards .s_card{
+            margin: 0 2vh;
+        }
+        .service_section .service_container .sercive_cards .s_card img{
+            height: 7vh;
+            width: 7vh;
+            z-index: 55;
+        }
+        .service_section .service_container .sercive_cards .s_card h3{
+            font-size: 16px;
+        }
+        /* ---------steps row section------- */
+
+        .service_section  .steps_row h1{
+            font-size: 34px;
+            margin: 4vh 0;
+            line-height:42px;
+        }
+        .service_section  .steps_row .steps_container .steps_card{
+            padding: 5px;
+            margin: 0 2vh;
+        }
+        .service_section  .steps_row .steps_container .steps_card img{
+            margin-bottom: .8vh;
+        }
+        .service_section  .steps_row .steps_container .steps_card p{
+            font-size: 13.5px;
+        }
+
+/* ------------------service section end--------------- */
+/* -----------------recipes section start ------------------ */ 
+        .recipe_section{
+            padding: 0vh 0vh;
+        }
+        .recipe_section .recipe_container h2{
+            font-size: 34px;
+            margin: 4vh 0;
+            line-height: 42px;
+        }
+        .recipe_section .recepies_card_container  .recepies_card{
+            padding: 1vh;
+            height:28vh;
+        }
+        .recipe_section .recepies_card_container  .recepies_card img{
+            height: 16vh;
+            width: 16vh;
+            margin-bottom: 1vh;
+        }
+        .recipe_section .recepies_card_container  .recepies_card .headding_box {
+            justify-content: space-between;
+        }
+        .recipe_section .recepies_card_container  .recepies_card .headding_box h3{
+            font-size: 15px;
+            line-height: 0;
+            margin-bottom: 1.8vh;
+        }
+        .recipe_section .recepies_card_container  .recepies_card p{
+            font-size: 13px;
+            line-height: 0;
+            margin-bottom: 2.4vh;
+        }
+        .recipe_section .recepies_card_container  .recepies_card .headding_box  h3{
+            font-size: 15px;
+        }
+        .recipe_section .recepies_card_container  .recepies_card .headding_box a{
+            color:#000000;
+            background: rgba(0, 0, 0, 0.219);
+            padding:2.5px 5.5px;
+            border-radius: 50%;
+            font-size: 14px;
+            margin-top: -10px;
+            display: none;
+        }
+        .recipe_section .recepies_card_container  .recepies_card p{
+            text-align: left;
+            font-size:13px;
+        }
+        .recipe_section .recepies_card_container  .recepies_card h4{
+            text-align-last: left;
+            margin-top: 10px;
+            font-size:18px;
+        }
+/* -----------------recipes section end ------------------ */ 
+
+/* ------------------app section start-------------------- */
+        .app_section {
+            width: 100%;
+            height: 70vh;
+            padding: 3vh 4vh;
+        }
+        .app_left_col img{
+            height: 85%;
+            width: 100%;
+            margin-left: 0vh;
+        }
+        .app_right_col .app_right_container h2{
+            font-size: 34px;
+            margin: 4vh 0;
+            line-height: 42px;
+        }
+        .app_right_col .app_right_container h3{
+            font-size: 13px;
+            line-height: 20px;
+        }
+        .app_right_col .app_right_container .button_container .button_box{
+            padding: 1vh;
+        }
+        .app_right_col .app_right_container .button_container .button_box i{
+        font-size: 20px;
+        margin-right: 8px;
+        color:#000000;
+        }
+        .app_right_col .app_right_container .button_container .button_box p{
+            font-size: 11px;
+            line-height: 0px;
+        }
+        .app_right_col .app_right_container .button_container .button_box h4{
+            font-size: 15px;
+        }
+
+/* ------------------app section end-------------------- */
+
+/* ---------------bocking section start------------------- */
+        .bocking_section{
+            padding: 0vh 2vh;
+            height: auto;
+        }
+        .bocking_section .headding{
+            margin-bottom: 2vh;
+        }
+        .bocking_section .bocking_container .bk_right_col{
+            padding:1vh;
+        }
+        .bocking_section .bocking_container .bk_right_col h2{
+            font-size: 34px;
+            margin: 4vh 0;
+            line-height: 42px;
+        }
+        .bocking_section .bocking_container .bk_right_col .button_container .button_row{
+            margin-right: 4vh;
+        }
+        .bocking_section .bocking_container .bk_right_col .button_container  .button{
+            height: 4vh;
+            width: 15vh;
+            padding: .8vh;
+            margin: 1vh;
+        }
+        .bocking_section .bocking_container .bk_right_col .button_container  .button a{
+            margin-right:.4vh;
+            font-size: 15px;
+        }
+        .bocking_section .bocking_container .bk_right_col .button_container  .button table tr td select{
+            font-size: 13px;
+        }
+
+        .bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2{
+            height: 4.4vh;
+            margin: 0 .5vh;
+        }
+        .bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2 input{
+            font-size: 15px;
+        }
+
+        .bocking_section .bocking_container .bk_right_col .button_container .button_row .button_3{
+            height: 4.4vh;
+        }
+ 
+
+/* ---------------bocking section end------------------- */
+
+/* -------------review section start------------------ */
+        .review_section{
+            width: 100%;
+            height: 80vh;
+            padding: 3vh 0vh;
+        }
+        .rv_left_col{
+            padding: 0vh ;
+            margin-left: 7vh;
+            width: 100%;
+        }
+        .rv_left_col{
+            width: 45%;
+        }
+        .rv_left_col h2{
+            font-size: 34px;
+            margin: 4vh 0;
+            line-height: 42px;
+            text-align: center;
+        }
+        .rv_left_col .user_info{
+            margin-bottom: 5vh;
+        }
+        .rv_left_col .user_container{
+            display: flex;
+            margin-bottom: 0.8vh;
+        }
+        .rv_left_col .user_container p{
+            font-size: 13px;
+        }
+        .rv_left_col p{
+            font-size: 13px;
+            line-height:20px;
+            margin-bottom: 1.5vh;
+        }
+        .rv_right_col{
+            width: 55%;
+        }
+        .rv_right_col img{
+            height:30vh;
+            width: 100%;
+        }
+
+/* -------------review section start------------------ */
+/* ----------------footer_section start--------------- */
+        .footer_section{
+            width: 100%;
+            height: 50vh;
+            padding: 6vh 4vh;
+        }
+        .footer_section .headding{
+            margin-bottom: 10vh;
+        }
+/* ----------------footer_section end--------------- */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    #menu_bars{
+        display: initial;
+    }
+
+
+/* ------------------home section start--------------- */
+    .hero_section{
+        width: 100%;
+        height: auto; 
+    }
+    .home_container{
+        display: block;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding-top: 5vh;
+    }
+    .left_col,
+    .right_col{
+        width: 100%;
+    }
+    .left_col{
+        padding: 0vh;
+        padding-left: 5vh;
+    }
+    .left_col h1{
+        font-size: 5vh;
+        line-height: 8vh;
+        margin-top:8%;
+        color:rgba(255, 255, 255, 0.863);
+    }
+    .left_col button{
+        margin: 30px 0;
+    }
+    .left_col .home_card{
+        display: flex;
+        margin-top: 5vh;
+    }
+    .right_col img{
+        height: 100%;
+        width: 100%;
+        padding: 7vh;
+
+    }
+/* ------------------home section end--------------- */
+
+/* ------------------service section start--------------- */
+    .service_section{
+        height: 90vh;
+        padding: 0vh 0vh;
+    }
+    .service_section .service_container .sercive_cards{
+        margin-top: 5vh;
+    }
+    .service_section .service_container .sercive_cards .s_card h3{
+        font-size: 14px;
+    }
+
+/* ------------------service section start--------------- */
+    .service_section{
+        width: 100%;
+        height: auto;
+        padding: 0vh 2vh;
+    }
+
+    .service_section .service_container h2{
+        font-size: 34px;
+        margin: 4vh 0;
+        line-height: 42px;
+    }
+    .service_section .service_container{
+        margin:0 0vh;
+        justify-content: space-around;
+    }
+    .service_section .service_container .sercive_cards{
+        margin: 0 0vh;
+    }
+    .service_section .service_container .sercive_cards .s_card{
+        margin: 0 1.2vh;
+    }
+    .service_section .service_container .sercive_cards .s_card img{
+        height: 7vh;
+        width: 7vh;
+        z-index: 55;
+    }
+    .service_section .service_container .sercive_cards .s_card h3{
+        font-size: 16px;
+    }
+    /* ---------steps row section------- */
+
+    .service_section  .steps_row h1{
+        font-size: 34px;
+        margin: 4vh 0;
+        line-height:42px;
+    }
+    .service_section  .steps_row .steps_container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding:0 4vh;
+    }
+    .service_section  .steps_row .steps_container .steps_card{
+        margin:1.3vh;
+    }
+    .service_section  .steps_row .steps_container .steps_card img{
+        margin-bottom: .8vh;
+    }
+    .service_section  .steps_row .steps_container .steps_card p{
+        font-size: 13.5px;
+    }
+
+    .service_section  .steps_row .steps_container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding:0 4vh;
+    }
+    .service_section  .steps_row .steps_container .steps_card{
+        margin:2vh 0;
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        height: 25vh;
+    }
+
+    .service_section  .steps_row .steps_container .steps_card{
+        margin:2vh 0;
+    }
+/* ------------------service section end--------------- */
+/* -----------------recipes section start ------------------ */ 
+    .recipe_section{
+        padding: 0vh 0vh;
+    }
+    .recipe_section .recipe_container h2{
+        font-size: 34px;
+        margin: 4vh 0;
+        line-height: 42px;
+    }
+    .recipe_section .recepies_card_container{
+        margin: 0vh 0vh;
+    }
+    .recipe_section .recepies_card_container  .recepies_card img{
+        height: 16vh;
+        width: 16vh;
+    }
+    .recipe_section .recepies_card_container  .recepies_card .headding_box h3{
+        font-size: 14px;
+        line-height: 0;
+        margin-bottom: 1.8vh;
+    }
+    .recipe_section .recepies_card_container  .recepies_card p{
+        font-size: 13px;
+        line-height: 0;
+        margin-bottom: 2.4vh;
+    }
+/* -----------------recipes section end ------------------ */ 
+/* -----------------app section start ------------------ */ 
+    .app_section h1{
+        font-size: 20px;
+    }
+    .app_section img{
+        height: 3vh;    
+        width: 3vh;
+    }
+    .app_section {
+        width: 100%;
+        height:auto;
+        padding: 3vh 4vh;
+    }
+    .app_section .app_container{
+        display: block;
+    }
+    .app_left_col{
+        width: 100%;
+    }
+    .app_left_col img{
+        width: 100%;
+        height: 100%;
+    }
+    .app_right_col {
+        width: 100%;
+    }
+    .app_right_col .app_right_container h2{
+        color:rgba(255, 255, 255, 0.863);
+        text-align: center;
+        font-size: 25px;
+        margin: 3vh 0;
+        line-height:34px;
+    }
+    .app_right_col .app_right_container .button_container .button_box{
+        background: #E3B205;
+        margin: 0 12px;
+        display: flex;
+        width: 20vh;
+        height: 4.5vh;
+        padding: 1vh;
+        border-radius: 4px;
+    }
+    .app_right_col .app_right_container .button_container .button_box h4{
+        font-size: 14px;
+    }
+/* -----------------app section end ------------------ */ 
+/* ---------------bocking section start------------------- */
+    .bocking_section .bocking_container{
+        display: block;
+    }
+    .bk_left_col{
+        width: 100%;
+    }
+    .bk_right_col{
+        width: 100%;
+    }
+    .bocking_section{
+        padding: 0vh 0vh;
+        height: auto;
+    }
+    .bocking_section .headding{
+        margin-bottom: 0vh;
+    }
+    .bk_left_col img{
+        height: 100%;
+        width: 45vh;
+        margin-top:8vh;
+    }
+    .bocking_section .bocking_container .bk_right_col{
+        padding:3vh 2vh;
+        text-align: center;
+    }
+    .bocking_section .bocking_container .bk_right_col .button_container  .button{
+        height: 5vh;
+        width: 19vh;
+        padding: .8vh;
+        margin: 1vh;
+    }
+    .bocking_section .bocking_container .bk_right_col .button_container  .button a{
+        margin-right:.4vh;
+        font-size: 17px;
+    }
+    .bocking_section .bocking_container .bk_right_col .button_container  .button table tr td select{
+        font-size: 16px;
+    }
+
+    .bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2{
+        height: 5vh;
+    }
+    .bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2 input{
+        font-size: 16px;
+    }
+
+    .bocking_section .bocking_container .bk_right_col .button_container .button_row .button_3{
+        height: 5vh;
+    }
+
+
+/* ---------------bocking section end------------------- */
+
+/* -------------review section start------------------ */
+    .review_section{
+        height:auto;
+        padding: 10vh 0vh;
+    }
+    .review_section .review_container{
+        display: block;
+    }
+    .review_section .headding{
+        margin-bottom: 0vh;
+    }
+    .rv_left_col{
+        width: 100%;
+        padding: 5vh;
+        margin-left: 0;
+    }
+    .rv_left_col h2{
+        margin-bottom:5vh ;
+    }
+    .rv_left_col .user_info{
+        margin-bottom: 5vh;
+    }
+    .rv_left_col .user_container{
+        display: flex;
+        margin-bottom: 1vh;
+    }
+    .rv_left_col .user_container p{
+        font-size: 14px;
+    }
+    .rv_left_col p{
+        font-size: 15px;
+        line-height:24px;
+        margin-bottom: 1.5vh;
+    }
+    .rv_right_col{
+        margin: 0vh;
+        width: 100%;
+    }
+    .rv_right_col img{
+        height: 45vh;
+        width: 100%;
+}
+
+/* -------------review section start------------------ */
+    .footer_section{
+        width: 100%;
+        height: auto;
+        padding: 5vh 4vh;
+        padding-bottom: 1.5vh;
+    }
+    .footer_section .headding{
+        margin-bottom: 3vh;
+    }
+/* ----------------footer_section end--------------- */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 540px){
+    
+/* --------------nav section---------------- */
+.navbar{
+    padding: 0% 0%;
+    width:35%;
+    height:100%;
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.navbar .menu{
+    display: block;
+}
+.navbar .menu a{
+    margin:10vh 1.5vh;
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+}
+.navbar .cart{
+    display: none;
+}
+
+.navbar{
+    left: -120%;
+}
+
+.navbar.active{
+    left: 0%;
+}
+/* ------------------nav section end-------------- */
+/* -----------------app section start ------------------ */ 
+.app_section h1{
+    font-size: 20px;
+}
+.app_section img{
+    height: 3vh;    
+    width: 3vh;
+}
+.app_section {
+    width: 100%;
+    height:auto;
+    padding: 3vh 4vh;
+}
+.app_section .app_container{
+    display: block;
+}
+.app_left_col{
+    width: 100%;
+}
+.app_left_col img{
+    width: 100%;
+    height: 100%;
+}
+.app_right_col {
+    width: 100%;
+}
+.app_right_col .app_right_container h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 25px;
+    margin: 3vh 0;
+    line-height:34px;
+}
+.app_right_col .app_right_container .button_container .button_box{
+    background: #E3B205;
+    margin: 0 12px;
+    display: flex;
+    width: 20vh;
+    height: 4.5vh;
+    padding: 1vh;
+    border-radius: 4px;
+}
+.app_right_col .app_right_container .button_container .button_box h4{
+    font-size: 14px;
+}
+/* -----------------app section end ------------------ */ 
+/* -----------------recipes section start ------------------ */ 
+
+.recipe_section .recipe_container h1{
+    font-size: 20px;
+}
+.recipe_section .recipe_container img{
+    height: 3vh;    
+    width: 3vh;
+}
+.recipe_section .recipe_container h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 25px;
+    margin: 3vh 0;
+    line-height:34px;
+}
+.recipe_section .recepies_card_container{
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+}
+.recipe_section .recepies_card_container  .recepies_card{
+    background: rgb(223, 192, 17);
+    height:28vh;
+    width:18vh;
+    margin: 1vh;
+    padding: 1.5vh;
+
+}
+.recipe_section .recepies_card_container  .recepies_card .headding_box {
+    justify-content: space-between;
+}
+.recipe_section .recepies_card_container  .recepies_card .headding_box  h3{
+    font-size: 12px;
+}
+.recipe_section .recepies_card_container  .recepies_card .headding_box a{
+    color:#000000;
+    background: rgba(0, 0, 0, 0.219);
+    padding:1.5px 4.5px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-top: -10px;
+    display: none;
+}
+.recipe_section .recepies_card_container  .recepies_card p{
+    text-align: left;
+    font-size:12px;
+}
+.recipe_section .recepies_card_container  .recepies_card h4{
+    text-align-last: left;
+    margin-top: 10px;
+    font-size:14px;
+}
+.recipe_section .recepies_card_container  .recepies_card::before{
+    content: 'Add Cart';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 90px;
+    height: 25px;
+    background: rgb(165, 24, 24);
+    border-radius: 4px;
+    padding-top: 3px;
+    color:#ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: -1;
+    transition:all 0.3s linear;
+}
+/* -----------------recipes section end ------------------ */ 
+/* ------------------service section start--------------- */
+.service_section{
+    height:auto;
+    padding: 0vh 0vh;
+    width: 100%;
+}
+.service_section .service_container h1{
+    font-size: 20px;
+}
+.service_section .service_container img{
+    height: 3vh;    
+    width: 3vh;
+}
+.service_section .service_container h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 25px;
+    margin: 3vh 0;
+    line-height:34px;
+}
+.service_section .service_container .headding{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service_section .service_container .sercive_cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service_section .service_container .sercive_cards .s_card{
+    margin: 2vh ;
+}
+
+/* ------------------service section end--------------- */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+    #menu_bars{
+        display: initial;
+    }
+
+
+/* ------------------home section start--------------- */
+    .hero_section{
+        width: 100%;
+        height: auto; 
+    }
+    .home_container{
+        display: block;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding-top: 5vh;
+    }
+    .left_col,
+    .right_col{
+        width: 100%;
+    }
+    .left_col{
+        padding-left:12.5%;
+    }
+    .left_col h1{
+        font-size: 3.5vh;
+        line-height: 5vh;
+        margin-top:8%;
+        color:rgba(255, 255, 255, 0.863);
+    }
+    .left_col button{
+        padding: 8px 30px;
+    }
+    .left_col .home_card{
+        display: flex;
+        margin-top: 5vh;
+    }
+    .left_col .home_card .card{
+        margin-right: 1vh;
+        background: rgba(255, 200, 0, 0.884);
+        height: 7vh;
+        width: 7vh;
+    }
+    .left_col .home_card .card img{
+        height: 3vh;
+        width: 3vh;
+    }
+    .left_col button{
+        margin: 30px 0;
+    }
+    .left_col .home_card{
+        display: flex;
+        margin-top: 0vh;
+    }
+    .right_col{
+        padding: 0;
+    }
+    .right_col img{
+        padding: 4vh;
+    }
+/* ------------------home section end--------------- */
+/* ------------------service section start--------------- */
+    .service_section{
+        height:auto;
+        padding: 0vh 0vh;
+        width: 100%;
+    }
+    .service_section .service_container h1{
+        font-size: 20px;
+    }
+    .service_section .service_container img{
+        height: 3vh;    
+        width: 3vh;
+    }
+    .service_section .service_container h2{
+        color:rgba(255, 255, 255, 0.863);
+        text-align: center;
+        font-size: 25px;
+        margin: 3vh 0;
+        line-height:34px;
+    }
+    .service_section .service_container .headding{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service_section .service_container .sercive_cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service_section .service_container .sercive_cards .s_card{
+        margin: 2vh 0;
+    }
+    /* ---------steps row section------- */
+    .service_section  .steps_row h1{
+        color:rgba(255, 255, 255, 0.863);
+        text-align: center;
+        font-size: 25px;
+        margin: 3vh 0;
+        line-height:34px;
+    }
+    .service_section  .steps_row{
+        padding: 2vh 0;
+    }
+    .service_section  .steps_row .steps_container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding:0 4vh;
+    }
+    .service_section  .steps_row .steps_container .steps_card{
+        margin:2vh 0;
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        height: 25vh;
+    }
+
+    .service_section  .steps_row .steps_container .steps_card{
+        margin:2vh 0;
+    }
+    .service_section  .steps_row .steps_container .steps_card p{
+        font-size: 14px;
+    }
+/* ------------------service section end--------------- */
+/* -----------------recipes section start ------------------ */ 
+
+.recipe_section .recipe_container h1{
+    font-size: 20px;
+}
+.recipe_section .recipe_container img{
+    height: 3vh;    
+    width: 3vh;
+}
+.recipe_section .recipe_container h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 25px;
+    margin: 3vh 0;
+    line-height:34px;
+}
+.recipe_section .recepies_card_container{
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+}
+.recipe_section .recepies_card_container  .recepies_card{
+    background: rgb(223, 192, 17);
+    height:28vh;
+    width:18vh;
+    margin: 1vh;
+    padding: 1.5vh;
+
+}
+.recipe_section .recepies_card_container  .recepies_card .headding_box {
+    justify-content: space-between;
+}
+.recipe_section .recepies_card_container  .recepies_card .headding_box  h3{
+    font-size: 12px;
+}
+.recipe_section .recepies_card_container  .recepies_card .headding_box a{
+    color:#000000;
+    background: rgba(0, 0, 0, 0.219);
+    padding:1.5px 4.5px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-top: -10px;
+    display: none;
+}
+.recipe_section .recepies_card_container  .recepies_card p{
+    text-align: left;
+    font-size:12px;
+}
+.recipe_section .recepies_card_container  .recepies_card h4{
+    text-align-last: left;
+    margin-top: 10px;
+    font-size:14px;
+}
+.recipe_section .recepies_card_container  .recepies_card::before{
+    content: 'Add Cart';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 90px;
+    height: 25px;
+    background: rgb(165, 24, 24);
+    border-radius: 4px;
+    padding-top: 3px;
+    color:#ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: -1;
+    transition:all 0.3s linear;
+}
+/* -----------------recipes section end ------------------ */ 
+/* -----------------app section start ------------------ */ 
+.app_section h1{
+    font-size: 20px;
+}
+.app_section img{
+    height: 3vh;    
+    width: 3vh;
+}
+.app_section {
+    width: 100%;
+    height:auto;
+    padding: 3vh 4vh;
+}
+.app_section .app_container{
+    display: block;
+}
+.app_left_col{
+    width: 100%;
+}
+.app_left_col img{
+    width: 100%;
+    height: 100%;
+}
+.app_right_col {
+    width: 100%;
+}
+.app_right_col .app_right_container h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 25px;
+    margin: 3vh 0;
+    line-height:34px;
+}
+.app_right_col .app_right_container .button_container .button_box{
+    background: #E3B205;
+    margin: 0 12px;
+    display: flex;
+    width: 20vh;
+    height: 4.5vh;
+    padding: 1vh;
+    border-radius: 4px;
+}
+.app_right_col .app_right_container .button_container .button_box h4{
+    font-size: 14px;
+}
+/* -----------------app section end ------------------ */ 
+/* ---------------bocking section start------------------- */
+
+.bocking_section h1{
+    font-size: 20px;
+}
+.bocking_section img{
+    height: 3vh;    
+    width: 3vh;
+}
+.bk_left_col{
+    width: 100%;
+    padding: 5vh;
+}
+.bk_left_col img{
+    height: 100%;
+    width: 100%;
+    margin-top:0vh;
+    margin-left: 0vh;
+    padding: 5vh;
+}
+.bk_right_col{
+    width: 100%;
+    padding: 2vh;
+}
+.bocking_section .bocking_container .bk_right_col{
+    text-align: center;
+    width: 100%;
+}
+.bocking_section .bocking_container .bk_right_col h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 25px;
+    margin: 3vh 0;
+    line-height:34px;
+}
+.bocking_section .bocking_container .bk_right_col .button_container  .button{
+    padding: .4vh;
+    margin: .4vh;
+}
+.bocking_section .bocking_container .bk_right_col .button_container  .button a{
+    margin-right:.1vh;
+    font-size: 12px;
+}
+.bocking_section .bocking_container .bk_right_col .button_container  .button table tr td select{
+    font-size: 10px;
+}
+
+.bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2{
+    height: 4vh;
+    margin: 0 1vh;
+}
+.bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2 a{
+    font-size: 14px;
+}
+.bocking_section .bocking_container .bk_right_col .button_container .button_row .button_2 input{
+    font-size: 14px;
+}
+
+.bocking_section .bocking_container .bk_right_col .button_container .button_row .button_3{
+    height: 4vh;
+    padding: 0;
+}
+
+/* ---------------bocking section end------------------- */
+
+/* -------------review section start------------------ */
+
+.review_section h1{
+   font-size: 20px;
+}
+.review_section img{
+    height: 3vh;    
+    width: 3vh;
+}
+.rv_left_col{
+    padding:0 5vh ;
+    margin-right: 0vh;
+    width: 100%;
+}
+.rv_left_col h2{
+    color:rgba(255, 255, 255, 0.863);
+    text-align: center;
+    font-size: 25px;
+    margin: 3vh 0;
+    line-height:34px;
+}
+.rv_left_col .user_container p{
+    font-size: 14px;
+}
+.rv_left_col p{
+    font-size: 14px;
+}
+.rv_right_col{
+    margin-right:0vh;
+}
+.rv_right_col img{
+    height:25vh;
+    width: 80%;
+} */
+/* -------------review section start------------------ */
+/* -------------footer section start------------------ */
+.footer_section h1{
+    font-size: 20px;
+}
+.footer_section img{
+    height: 3vh;    
+    width: 3vh;
+}
+.footer_section{
+    width: 100%;
+    height: auto;
+    padding: 5vh 0vh;
+    padding-bottom: 1.5vh;
+}
+.footer_section .footer_conatiner{
+    display: block;
+}
+.fotter_left{
+    width: 100%;
+    padding: 5vh;
+}
+.fotter_right{
+    width: 100%;
+    padding: 5vh;
+}
+.footer_section .headding{
+    margin-bottom: 3vh;
+}
+.footer_right{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+.footer_right .footer_content a{
+    margin: .7vh 0;
+    font-size:12px;
+}
+/* ----------------footer_section end--------------- */
+}
+/* --------------media quarry end------------------- */
